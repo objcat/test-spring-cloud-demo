@@ -1,0 +1,16 @@
+server:
+  #服务端口号
+  port: 8082
+spring:
+  application:
+    #服务名称 - 服务之间使用名称进行通讯
+    name: service-objcat-a
+eureka:
+  client:
+    service-url:
+      #填写注册中心服务器地址
+      defaultZone: http://localhost:8081/eureka
+    #是否需要将自己注册到注册中心
+    register-with-eureka: true
+    #是否需要搜索服务信息
+    fetch-registry: true
