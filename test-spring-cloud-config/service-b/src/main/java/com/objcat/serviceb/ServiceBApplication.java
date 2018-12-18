@@ -1,15 +1,17 @@
-package com.objcat.servicea;
+package com.objcat.serviceb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class ServiceAApplication {
+@EnableFeignClients
+public class ServiceBApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServiceAApplication.class, args);
+        SpringApplication.run(ServiceBApplication.class, args);
     }
 
 }

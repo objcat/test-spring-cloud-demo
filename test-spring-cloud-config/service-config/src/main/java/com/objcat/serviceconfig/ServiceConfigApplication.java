@@ -1,15 +1,17 @@
-package com.objcat.servicea;
+package com.objcat.serviceconfig;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class ServiceAApplication {
+@EnableConfigServer
+public class ServiceConfigApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServiceAApplication.class, args);
+        SpringApplication.run(ServiceConfigApplication.class, args);
     }
 
 }
