@@ -17,11 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class TestController {
 
-//    @Value("${name}")
-//    private String name;
+    @Value("${name}")
+    private String name;
 
     @RequestMapping("/hello")
     String hello() {
-        return "hello world";
+        return name;
     }
 }
