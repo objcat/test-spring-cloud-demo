@@ -1,10 +1,10 @@
-# SpringCloud学习Demo -- by objcat
+# SpringCloud学习Demo
 
 
-说明一下, 这些Demo每个都是基于, `test-spring-cloud-base`, 我会从这个项目的基础上不断衍生出包含单独特定服务的项目, 这样做不至于让Demo变的非常混乱, 下面是对照列表.
-
-test-spring-cloud-base --- 基础Demo 包含eureka, service-a, service-b
-test-spring-cloud-config --- 分布式配置中心SpringCloudConfig
+说明一下, 这些Demo每个都是基于, `test-spring-cloud-base`, 我会从这个项目的基础上不断衍生出包含单独特定服务的项目, 这样做不至于让Demo变的非常混乱, 下面是对照列表.<br>
+<br>
+test-spring-cloud-base --- 基础Demo 包含eureka, service-a, service-b <br>
+test-spring-cloud-config --- 分布式配置中心SpringCloudConfig <br>
 
 
 相关文章:<br>
