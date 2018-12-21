@@ -1,0 +1,27 @@
+server:
+  #服务端口号
+  port: 8085
+spring:
+  application:
+    #服务名称 - 服务之间使用名称进行通讯
+    name: service-zuul
+eureka:
+  client:
+    service-url:
+      #填写注册中心服务器地址
+      defaultZone: http://localhost:8081/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+zuul:
+  routes:
+    #设置服务a 路径名称 随便起
+    service-a:
+      path: /service-a/**
+      #这里写a服务的注册名字
+      serviceId: service-objcat-a
+    #设置服务b 路径名称 随便起
+    service-b:
+      path: /service-b/**
+      #这里写b服务的注册名字
+      serviceId: service-objcat-b
