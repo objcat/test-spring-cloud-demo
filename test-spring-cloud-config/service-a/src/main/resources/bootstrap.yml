@@ -22,7 +22,6 @@ eureka:
     register-with-eureka: true
     #是否需要搜索服务信息
     fetch-registry: true
-
 management:
   endpoints:
     web:

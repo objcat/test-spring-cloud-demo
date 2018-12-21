@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.xml.ws.Service;
 
 /**
- * description: xxxxx <br>
+ * description: 服务B <br>
  * date: 2018/12/14 下午5:37 <br>
  * author: objcat <br>
  * version: 1.0 <br>
