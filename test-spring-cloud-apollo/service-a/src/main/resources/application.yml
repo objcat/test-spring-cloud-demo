@@ -1,0 +1,16 @@
+app:
+  # 服务id
+  id: service-a
+apollo:
+  # 阿波罗地址
+  meta: http://localhost:8080
+
+# 其他配置均放在了配置中心
+#name = zhangsan
+#server.port = 8082
+#spring.application.name = service-objcat-a
+#eureka.client.service-url.defaultZone = http://localhost:8081/eureka
+#eureka.client.register-with-eureka = true
+#eureka.client.fetch-registry = true
+#eureka.instance.prefer-ip-address = true
+#eureka.instance.instance-id = ${spring.cloud.client.ip-address}:${server.port}
